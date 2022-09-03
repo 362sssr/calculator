@@ -1,0 +1,52 @@
+<html> 
+<head> 
+<link rel="stylesheet" href="CALCI.CSS"> 
+<script type="text/javascript" src=" calci.js"> 
+</script> 
+</head> 
+<body > 
+<p>SATHYA SREE.S<BR>21CS095<BR>CALCULATOR</P> 
+<fieldset ><legend>CALCI</legend> 
+<table background="E:\AMMU\naane\legends\mir23.jpg"> <tr> 
+<td colspan="4" ><input type="text" size="+30" id="result" ></td> <td colspan="1" align="center">on<input type="radio" align="center"></td> </tr> 
+<tr> 
+<th colspan="3"> </th> 
+<th colspan="2" align="center"><img src="E:\AMMU\naane\legends\mlb.jpg"  width="75"height="60"></th> 
+</tr> 
+<tr class="lb"> 
+<th><button value="%" onclick="disc('%')" >%</button></th> <th><button value="7" onclick="disc('7')">7</button></th> <th><button value="8" onclick="disc('8')">8</button></th> <th><button value="9" onclick="disc('9')">9</button></th>
+<th><button value="/" onclick="disc('/')">/</button></th> 
+<th></th> 
+</tr><tr class="cn"> 
+<th><button value="+" onclick="disc('+')">+</button></th> <th><button value="4" onclick="disc('4')">4</button></th> <th><button value="5" onclick="disc('5')">5</button></th> <th><button value="6" onclick="disc('6')">6</button></th> <th><button value="*" onclick="disc('*')">*</button></th> 
+</tr><tr class="rr"> 
+<th><button value="m-" onclick="disc('-')">M-</button></th></th> <th><button value="1" onclick="disc('1')">1</button></th> <th><button value="2" onclick="disc('2')">2</button></th> <th><button value="3" onclick="disc('3')">3</button></th> <th><button value="-" onclick="disc('-')">-</button></th> </tr><tr class="luca"> 
+<th><button value="M+" onclick="disc('+')">M+</button></th> <th><button value="ON.C" onclick="clr()">ON.C</button></th> <th><button value="0" onclick="disc('0')">0</button></th> <th><button value="." onclick="disc('.')">.</button></th> <th><button value="=" onclick="solve()">=</button></th> </tr> 
+</fieldset> 
+</body> 
+</html>
+ JAVASCRIPT FILE 
+ function disc(val) 
+{ 
+document.getElementById("result").value+=val } 
+function solve() 
+{ 
+let x=document.getElementById("result").value let y=eval(x) 
+document.getElementById("result").value=y } 
+function clr() 
+{ 
+document.getElementById("result").value=" " } 
+
+
+
+ CSS FILE 
+body{padding:30px;padding:200px;background-color:rgba(0,0,0,0.9);} legend{color:white;} 
+fieldset{background-color:rgba(200,0,500,0.7);} 
+table{position:relative;left:275px;border-style:dotted;background-repeat:no repeat;background-size:cover;border-color:blue;} 
+td{border-style:solid;color:white;border-color:black;} 
+.rr{background-color:rgba(0,0,450,0.4);} 
+.lb{background-color:rgba(450,0,0,0.4);} 
+.luca{background-color:rgba(450,0,450,0.4);} 
+.cn{background-color:rgba(0,600,450,0.5);} 
+button{color:white;width:60px;height:50px;background 
+color:rgba(10,10,0,0.2);border-radius:50%;font-size:20px;} p{color:white;text-align:center;}
